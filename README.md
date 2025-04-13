@@ -39,6 +39,7 @@ Cada fila representa un análisis de suelo en un campo diferente.
 - Histograma del pH con estilo moderno/futurista 🌌
 - ![](Figure_1.png)
 - Heatmap de correlación entre nutrientes y pH
+- ![](Matriz_Correlacion.png)
 
 ---
 
