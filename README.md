@@ -1,4 +1,3 @@
-# Sowing In good land
 # 🌱 Sowing in Good Land - Predicción de Cultivos con Machine Learning
 
 Este proyecto utiliza machine learning para ayudar a un agricultor a determinar **el mejor tipo de cultivo** para sembrar, basado en mediciones del suelo como el contenido de **nitrógeno (N)**, **fósforo (P)**, **potasio (K)** y el **pH**.
@@ -48,5 +47,5 @@ Cada fila representa un análisis de suelo en un campo diferente.
 Tras entrenar modelos de regresión logística individuales para cada feature, se concluyó que:
 
 ```python
-best_predictive_feature = {'P': 0.7034482758620689}
+best_predictive_feature = {'K': 0.25681818181818183}
 
