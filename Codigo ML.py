@@ -1,4 +1,4 @@
-# All required libraries are imported here for you.
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -7,30 +7,23 @@ from sklearn.model_selection import train_test_split
 from sklearn import metrics
 
 
-# Load the dataset
 crops = pd.read_csv("soil_measures.csv")
 
-# Write your code here
 print(crops.isnull().sum())
 plt.style.use("dark_background")  # fondo oscuro
 
-# Paleta moderna de colores con seaborn
 sns.set_palette("cool")  # Puedes probar "rocket", "mako", "viridis", etc.
 
-# Gráfico con mejoras visuales
 plt.figure(figsize=(10, 6))  # tamaño más cinematográfico
 crops["ph"].hist(bins="auto", color="#00FFD1", edgecolor="white", alpha=0.8)
 
-# Títulos y etiquetas con estilo
 plt.title("🌌 Distribución del pH del Suelo", fontsize=18, color="#00FFB2", weight="bold")
 plt.xlabel("🌿 pH", fontsize=14, color="#BBFFFF")
 plt.ylabel("📊 Frecuencia", fontsize=14, color="#BBFFFF")
 
-# Cambiar estilo de ticks
 plt.xticks(color='white')
 plt.yticks(color='white')
 
-# Agregar una cuadrícula sutil
 plt.grid(color='gray', linestyle='--', linewidth=0.3, alpha=0.5)
 
 plt.show()
